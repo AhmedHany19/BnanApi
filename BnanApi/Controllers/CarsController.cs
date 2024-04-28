@@ -21,12 +21,6 @@ namespace BnanApi.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAllCar()
         {
-            //var carsAvailable = _unitOfWork.CrCasCarInformation.FindAll(x => x.CrCasCarInformationLessor == lessorCode && x.CrCasCarInformationBranch == bSLayoutVM.SelectedBranch && x.CrCasCarInformationStatus == Status.Active &&
-            //                                                                     x.CrCasCarInformationPriceStatus == true && x.CrCasCarInformationOwnerStatus == Status.Active &&
-            //                                                                    (x.CrCasCarInformationForSaleStatus == Status.Active || x.CrCasCarInformationForSaleStatus == Status.RendAndForSale),
-            //                                                                    new[] { "CrCasCarInformationDistributionNavigation", "CrCasCarInformationDistributionNavigation.CrCasPriceCarBasics",
-            //                                                                            "CrCasCarInformationCategoryNavigation", "CrCasCarDocumentsMaintenances","CrCasCarInformationCvtNavigation",
-            //                                                                            "CrCasCarInformationFuelNavigation" }).ToList();
             List<CarInfomationDTO> carInfomationDTOList = new List<CarInfomationDTO>();
             var cars = await _context.CrCasCarInformations.Where(x => x.CrCasCarInformationForSaleStatus != "A").Include(x=>x.CrCasCarInformationDistributionNavigation).ToListAsync();
             foreach (var car in cars)
@@ -41,7 +35,7 @@ namespace BnanApi.Controllers
                 carInfomationDTO.CurrentMeter= car.CrCasCarInformationCurrentMeter?.ToString("N0",CultureInfo.InvariantCulture);
                 carInfomationDTO.TelephoneContact= lessorInfo.CrMasLessorInformationCommunicationMobileKey + lessorInfo.CrMasLessorInformationCallFree;
                 carInfomationDTO.Email= lessorInfo.CrMasLessorInformationEmail;
-                carInfomationDTO.ImagePath= car.CrCasCarInformationDistributionNavigation.CrMasSupCarDistributionImage;
+                carInfomationDTO.ImagePath = car.CrCasCarInformationDistributionNavigation.CrMasSupCarDistributionImage.Replace("~", "");
                 carInfomationDTO.Price = car.CrCasCarInformationOfferValueSale?.ToString("N2", CultureInfo.InvariantCulture);
                 carInfomationDTOList.Add(carInfomationDTO);
             }

@@ -1,53 +1,12 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\dtos\\categoriesdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    }
-  ],
+  "WorkspaceRootPath": "C:\\Users\\WilzY\\BnanApi\\",
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": [
-        {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 1,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CategoriesDTO.cs",
-              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\DTOS\\CategoriesDTO.cs",
-              "RelativeDocumentMoniker": "BnanApi\\DTOS\\CategoriesDTO.cs",
-              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\DTOS\\CategoriesDTO.cs",
-              "RelativeToolTip": "BnanApi\\DTOS\\CategoriesDTO.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T11:51:00.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CarsController.cs",
-              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "BnanApi\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAmwD4AAAAzAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-18T09:38:31.521Z",
-              "EditorCaption": ""
-            }
-          ]
-        }
-      ]
+      "DocumentGroups": []
     }
   ]
 }

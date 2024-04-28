@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj": {}
+    "C:\\Users\\WilzY\\BnanApi\\BnanApi\\BnanApi.csproj": {}
   },
   "projects": {
-    "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj": {
+    "C:\\Users\\WilzY\\BnanApi\\BnanApi\\BnanApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj",
+        "projectUniqueName": "C:\\Users\\WilzY\\BnanApi\\BnanApi\\BnanApi.csproj",
         "projectName": "BnanApi",
-        "projectPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj",
+        "projectPath": "C:\\Users\\WilzY\\BnanApi\\BnanApi\\BnanApi.csproj",
         "packagesPath": "C:\\Users\\WilzY\\.nuget\\packages\\",
-        "outputPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\obj\\",
+        "outputPath": "C:\\Users\\WilzY\\BnanApi\\BnanApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\WilzY\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -45,6 +45,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "MailKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.29, )"
@@ -66,6 +70,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[6.0.29, )"
+            },
+            "MimeKit": {
+              "target": "Package",
+              "version": "[4.5.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

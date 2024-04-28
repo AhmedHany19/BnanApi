@@ -7,6 +7,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="MailKit" Version="4.5.0" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.29" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.29" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="6.0.29" />
@@ -15,7 +16,154 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="MimeKit" Version="4.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="wwwroot\images\Company\4001\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\101\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\101\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\101\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\102\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\102\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\102\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\103\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\103\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\103\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\104\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\104\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\104\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\105\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\105\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\105\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\106\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\106\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\107\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\107\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4001\Branches\107\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4001\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\101\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\101\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\101\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\102\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\102\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\102\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\103\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\103\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\103\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\104\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\104\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\104\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\105\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\105\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\105\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\106\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\106\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\106\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\107\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\107\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\107\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\108\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\108\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\108\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\109\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\109\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4002\Branches\109\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4002\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4002\Users\CAS4002\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\100\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\100\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\101\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\101\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\101\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\101\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\101\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\102\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\102\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\102\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\102\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\102\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\103\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\103\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\103\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\103\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\103\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\104\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\104\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\104\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\104\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4003\Branches\104\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4003\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4003\Users\CAS4003\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\101\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\101\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\101\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\101\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\101\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\102\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\102\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\102\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\102\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\102\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\103\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\103\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\103\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\103\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\103\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\104\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\104\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\104\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\104\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\104\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\105\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\105\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\105\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\105\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\105\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\106\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\106\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\106\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\106\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4004\Branches\106\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4005\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4005\Branches\100\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4005\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4005\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4005\Branches\100\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4005\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4005\Users\CAS4005\" />
+    <Folder Include="wwwroot\images\Company\4007\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4007\Branches\100\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4007\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4007\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4007\Branches\100\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4007\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4007\Support Images\" />
+    <Folder Include="wwwroot\images\Company\4007\Users\CAS4007\" />
+    <Folder Include="wwwroot\images\Company\4008\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4008\Branches\100\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4008\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4008\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4008\Branches\100\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4008\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4008\Support Images\" />
+    <Folder Include="wwwroot\images\Company\4008\Users\CAS4008\" />
+    <Folder Include="wwwroot\images\Company\4009\Branches\100\Arabic Contract\" />
+    <Folder Include="wwwroot\images\Company\4009\Branches\100\ArReceipt\" />
+    <Folder Include="wwwroot\images\Company\4009\Branches\100\Documentions\" />
+    <Folder Include="wwwroot\images\Company\4009\Branches\100\English Contract\" />
+    <Folder Include="wwwroot\images\Company\4009\Branches\100\EnReceipt\" />
+    <Folder Include="wwwroot\images\Company\4009\Contract Company\" />
+    <Folder Include="wwwroot\images\Company\4009\Support Images\" />
+    <Folder Include="wwwroot\images\Company\4009\Users\CAS4009\" />
   </ItemGroup>
 
 </Project>
