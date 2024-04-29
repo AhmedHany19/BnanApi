@@ -22,7 +22,6 @@ builder.Services.AddCors(options => options.AddPolicy("CorsPolicy", build =>
 ));
 
 builder.Services.Configure<MailSettings>(builder.Configuration.GetSection("MailSettings"));
-builder.Services.AddScoped<IEmailService, EmailService>();
 builder.Services.AddTransient<IMailingService, MailingService>();
 
 var app = builder.Build();

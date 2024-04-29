@@ -53,7 +53,7 @@ namespace BnanApi.Models
         public virtual CrMasSupRenterNationality? CrMasRenterInformationNationalityNavigation { get; set; }
         public virtual CrMasSupRenterProfession? CrMasRenterInformationProfessionNavigation { get; set; }
         public virtual CrMasSupRenterSector? CrMasRenterInformationSectorNavigation { get; set; }
-        public virtual CrMasRenterPost? CrMasRenterPost { get; set; }
+        public virtual CrMasRenterPost CrMasRenterPost { get; set; } = null!;
         public virtual ICollection<CrCasAccountReceipt> CrCasAccountReceipts { get; set; }
         public virtual ICollection<CrCasRenterLessor> CrCasRenterLessors { get; set; }
     }

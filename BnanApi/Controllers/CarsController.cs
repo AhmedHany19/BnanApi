@@ -1,6 +1,5 @@
 ﻿using BnanApi.Models;
 using BnanApi.DTOS;
-using BnanApi.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Globalization;

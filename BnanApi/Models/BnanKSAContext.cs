@@ -22,6 +22,7 @@ namespace BnanApi.Models
         public virtual DbSet<CrCasAccountBank> CrCasAccountBanks { get; set; } = null!;
         public virtual DbSet<CrCasAccountContractCompanyOwed> CrCasAccountContractCompanyOweds { get; set; } = null!;
         public virtual DbSet<CrCasAccountContractTaxOwed> CrCasAccountContractTaxOweds { get; set; } = null!;
+        public virtual DbSet<CrCasAccountInvoice> CrCasAccountInvoices { get; set; } = null!;
         public virtual DbSet<CrCasAccountReceipt> CrCasAccountReceipts { get; set; } = null!;
         public virtual DbSet<CrCasAccountSalesPoint> CrCasAccountSalesPoints { get; set; } = null!;
         public virtual DbSet<CrCasBeneficiary> CrCasBeneficiaries { get; set; } = null!;
@@ -88,6 +89,7 @@ namespace BnanApi.Models
         public virtual DbSet<CrMasSupRenterProfession> CrMasSupRenterProfessions { get; set; } = null!;
         public virtual DbSet<CrMasSupRenterSector> CrMasSupRenterSectors { get; set; } = null!;
         public virtual DbSet<CrMasSysCallingKey> CrMasSysCallingKeys { get; set; } = null!;
+        public virtual DbSet<CrMasSysConvertNoToText> CrMasSysConvertNoToTexts { get; set; } = null!;
         public virtual DbSet<CrMasSysEvaluation> CrMasSysEvaluations { get; set; } = null!;
         public virtual DbSet<CrMasSysGroup> CrMasSysGroups { get; set; } = null!;
         public virtual DbSet<CrMasSysMainTask> CrMasSysMainTasks { get; set; } = null!;
@@ -107,7 +109,6 @@ namespace BnanApi.Models
         public virtual DbSet<CrMasUserProceduresValidation> CrMasUserProceduresValidations { get; set; } = null!;
         public virtual DbSet<CrMasUserSubValidation> CrMasUserSubValidations { get; set; } = null!;
         
-
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
@@ -364,6 +365,88 @@ namespace BnanApi.Models
                     .WithMany(p => p.CrCasAccountContractTaxOweds)
                     .HasForeignKey(d => d.CrCasAccountContractTaxOwedUserCode)
                     .HasConstraintName("fk_CR_Cas_Account_Contract_Tax_Owed_CR_Mas_User_Information");
+            });
+
+            modelBuilder.Entity<CrCasAccountInvoice>(entity =>
+            {
+                entity.HasKey(e => e.CrCasAccountInvoiceNo);
+
+                entity.ToTable("CR_Cas_Account_Invoice");
+
+                entity.Property(e => e.CrCasAccountInvoiceNo)
+                    .HasMaxLength(22)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_No")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceArPdfFile)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Cas_Account_Invoice_Ar_PDF_File");
+
+                entity.Property(e => e.CrCasAccountInvoiceBranchCode)
+                    .HasMaxLength(3)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Branch_Code")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceDate)
+                    .HasColumnType("datetime")
+                    .HasColumnName("CR_Cas_Account_Invoice_Date");
+
+                entity.Property(e => e.CrCasAccountInvoiceEnPdfFile)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Cas_Account_Invoice_En_PDF_File");
+
+                entity.Property(e => e.CrCasAccountInvoiceLessorCode)
+                    .HasMaxLength(4)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Lessor_Code")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceReferenceContract)
+                    .HasMaxLength(22)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Reference_Contract")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceReferenceReceipt)
+                    .HasMaxLength(22)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Reference_Receipt")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceType)
+                    .HasMaxLength(3)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Type")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrCasAccountInvoiceUserCode)
+                    .HasMaxLength(10)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_User_Code");
+
+                entity.Property(e => e.CrCasAccountInvoiceYear)
+                    .HasMaxLength(2)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Cas_Account_Invoice_Year")
+                    .IsFixedLength();
+
+                entity.HasOne(d => d.CrCasAccountInvoiceReferenceReceiptNavigation)
+                    .WithMany(p => p.CrCasAccountInvoices)
+                    .HasForeignKey(d => d.CrCasAccountInvoiceReferenceReceipt)
+                    .HasConstraintName("fk_CR_Cas_Account_Invoice_CR_Cas_Account_Receipt");
+
+                entity.HasOne(d => d.CrCasAccountInvoiceUserCodeNavigation)
+                    .WithMany(p => p.CrCasAccountInvoices)
+                    .HasForeignKey(d => d.CrCasAccountInvoiceUserCode)
+                    .HasConstraintName("fk_CR_Cas_Account_Invoice_CR_Mas_User_Information_Code");
+
+                entity.HasOne(d => d.CrCasAccountInvoiceNavigation)
+                    .WithMany(p => p.CrCasAccountInvoices)
+                    .HasPrincipalKey(p => new { p.CrCasBranchInformationCode, p.CrCasBranchInformationLessor })
+                    .HasForeignKey(d => new { d.CrCasAccountInvoiceBranchCode, d.CrCasAccountInvoiceLessorCode })
+                    .HasConstraintName("fk_CR_Cas_Account_Invoice_CR_Cas_Branch_Information");
             });
 
             modelBuilder.Entity<CrCasAccountReceipt>(entity =>
@@ -2385,6 +2468,10 @@ namespace BnanApi.Models
 
                 entity.Property(e => e.CrCasRenterContractBasicCopy).HasColumnName("CR_Cas_Renter_Contract_Basic_Copy");
 
+                entity.Property(e => e.CrCasRenterContractBasicActualAdvantagesValue)
+                    .HasColumnType("decimal(13, 2)")
+                    .HasColumnName("CR_Cas_Renter_Contract_Basic_Actual_Advantages_Value");
+
                 entity.Property(e => e.CrCasRenterContractBasicActualAmountRequired)
                     .HasColumnType("decimal(13, 2)")
                     .HasColumnName("CR_Cas_Renter_Contract_Basic_Actual_Amount_Required");
@@ -4034,17 +4121,9 @@ namespace BnanApi.Models
                     .HasColumnName("CR_Mas_Lessor_Image_Code")
                     .IsFixedLength();
 
-                entity.Property(e => e.CrMasLessorImageArBillExchange)
+                entity.Property(e => e.CrMasLessorImageArActualInvoice)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Bill_Exchange");
-
-                entity.Property(e => e.CrMasLessorImageArBoxFeeding)
-                    .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Box_Feeding");
-
-                entity.Property(e => e.CrMasLessorImageArCatchReceipt)
-                    .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Catch_Receipt");
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Actual_Invoice");
 
                 entity.Property(e => e.CrMasLessorImageArContractPage1)
                     .HasMaxLength(100)
@@ -4082,17 +4161,25 @@ namespace BnanApi.Models
                     .HasMaxLength(100)
                     .HasColumnName("CR_Mas_Lessor_Image_Ar_Contract_Page_9");
 
-                entity.Property(e => e.CrMasLessorImageArDeliveryCustody)
+                entity.Property(e => e.CrMasLessorImageArExternalBillExchangeReceipt)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Delivery_Custody");
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_External_Bill_Exchange_Receipt");
 
-                entity.Property(e => e.CrMasLessorImageArTransferFtenant)
+                entity.Property(e => e.CrMasLessorImageArExternalCatchReceipt)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Transfer_FTenant");
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_External_Catch_Receipt");
 
-                entity.Property(e => e.CrMasLessorImageArTransferTtenant)
+                entity.Property(e => e.CrMasLessorImageArInitialInvoice)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Transfer_TTenant");
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Initial_Invoice");
+
+                entity.Property(e => e.CrMasLessorImageArInternalBillExchangeReceipt)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Internal_Bill_Exchange_Receipt");
+
+                entity.Property(e => e.CrMasLessorImageArInternalCatchReceipt)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Mas_Lessor_Image_Ar_Internal_Catch_Receipt");
 
                 entity.Property(e => e.CrMasLessorImageContract24Hour)
                     .HasMaxLength(100)
@@ -4122,17 +4209,9 @@ namespace BnanApi.Models
                     .HasMaxLength(100)
                     .HasColumnName("CR_Mas_Lessor_Image_ContractFinished");
 
-                entity.Property(e => e.CrMasLessorImageEnBillExchange)
+                entity.Property(e => e.CrMasLessorImageEnActualInvoice)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Bill_Exchange");
-
-                entity.Property(e => e.CrMasLessorImageEnBoxFeeding)
-                    .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Box_Feeding");
-
-                entity.Property(e => e.CrMasLessorImageEnCatchReceipt)
-                    .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Catch_Receipt");
+                    .HasColumnName("CR_Mas_Lessor_Image_En_Actual_Invoice");
 
                 entity.Property(e => e.CrMasLessorImageEnContractPage1)
                     .HasMaxLength(100)
@@ -4170,17 +4249,25 @@ namespace BnanApi.Models
                     .HasMaxLength(100)
                     .HasColumnName("CR_Mas_Lessor_Image_En_Contract_Page_9");
 
-                entity.Property(e => e.CrMasLessorImageEnDeliveryCustody)
+                entity.Property(e => e.CrMasLessorImageEnExternalBillExchangeReceipt)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Delivery_Custody");
+                    .HasColumnName("CR_Mas_Lessor_Image_En_External_Bill_Exchange_Receipt");
 
-                entity.Property(e => e.CrMasLessorImageEnTransferFtenant)
+                entity.Property(e => e.CrMasLessorImageEnExternalCatchReceipt)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Transfer_FTenant");
+                    .HasColumnName("CR_Mas_Lessor_Image_En_External_Catch_Receipt");
 
-                entity.Property(e => e.CrMasLessorImageEnTransferTtenant)
+                entity.Property(e => e.CrMasLessorImageEnInitialInvoice)
                     .HasMaxLength(100)
-                    .HasColumnName("CR_Mas_Lessor_Image_En_Transfer_TTenant");
+                    .HasColumnName("CR_Mas_Lessor_Image_En_Initial_Invoice");
+
+                entity.Property(e => e.CrMasLessorImageEnInternalBillExchangeReceipt)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Mas_Lessor_Image_En_Internal_Bill_Exchange_Receipt");
+
+                entity.Property(e => e.CrMasLessorImageEnInternalCatchReceipt)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Mas_Lessor_Image_En_Internal_Catch_Receipt");
 
                 entity.Property(e => e.CrMasLessorImageLogo)
                     .HasMaxLength(100)
@@ -5923,6 +6010,43 @@ namespace BnanApi.Models
                     .IsFixedLength();
             });
 
+            modelBuilder.Entity<CrMasSysConvertNoToText>(entity =>
+            {
+                entity.HasKey(e => new { e.CrMasSysConvertNoToTextCode, e.CrMasSysConvertNoToTextType });
+
+                entity.ToTable("CR_Mas_Sys_Convert_NoToText");
+
+                entity.Property(e => e.CrMasSysConvertNoToTextCode)
+                    .HasMaxLength(2)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_Code")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrMasSysConvertNoToTextType)
+                    .HasMaxLength(1)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_Type")
+                    .IsFixedLength();
+
+                entity.Property(e => e.CrMasSysConvertNoToTextArName)
+                    .HasMaxLength(30)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_Ar_Name");
+
+                entity.Property(e => e.CrMasSysConvertNoToTextEnName)
+                    .HasMaxLength(30)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_En_Name");
+
+                entity.Property(e => e.CrMasSysConvertNoToTextReasons)
+                    .HasMaxLength(100)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_Reasons");
+
+                entity.Property(e => e.CrMasSysConvertNoToTextStatus)
+                    .HasMaxLength(1)
+                    .IsUnicode(false)
+                    .HasColumnName("CR_Mas_Sys_Convert_NoToText_Status")
+                    .IsFixedLength();
+            });
+
             modelBuilder.Entity<CrMasSysEvaluation>(entity =>
             {
                 entity.HasKey(e => e.CrMasSysEvaluationsCode);
@@ -6572,7 +6696,6 @@ namespace BnanApi.Models
 
                 entity.HasIndex(e => e.CrMasUserInformationLessor, "IX_CR_Mas_User_Information_CR_Mas_User_Information_Lessor");
 
-
                 entity.Property(e => e.CrMasUserInformationCode)
                     .HasMaxLength(10)
                     .IsUnicode(false)
@@ -6710,11 +6833,12 @@ namespace BnanApi.Models
                     .HasColumnName("CR_Mas_User_Information_Total_Balance")
                     .HasDefaultValueSql("((0))");
 
+               
+
                 entity.HasOne(d => d.CrMasUserInformationLessorNavigation)
                     .WithMany(p => p.CrMasUserInformations)
                     .HasForeignKey(d => d.CrMasUserInformationLessor)
                     .HasConstraintName("FK_CR_Mas_User_Information_CR_Mas_Lessor_Information");
-
             });
 
             modelBuilder.Entity<CrMasUserLogin>(entity =>
@@ -7068,8 +7192,6 @@ namespace BnanApi.Models
                     .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_CR_Mas_User_Sub_Validation_CR_Mas_User_Information");
             });
-
-            
 
             OnModelCreatingPartial(modelBuilder);
         }

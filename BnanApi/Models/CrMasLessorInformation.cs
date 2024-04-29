@@ -53,7 +53,7 @@ namespace BnanApi.Models
         public string? CrMasLessorInformationReasons { get; set; }
 
         public virtual CrCasLessorClassification? CrMasLessorInformationClassificationNavigation { get; set; }
-        public virtual CrMasLessorImage? CrMasLessorImage { get; set; }
+        public virtual CrMasLessorImage CrMasLessorImage { get; set; } = null!;
         public virtual ICollection<CrCasAccountBank> CrCasAccountBanks { get; set; }
         public virtual ICollection<CrCasAccountContractCompanyOwed> CrCasAccountContractCompanyOweds { get; set; }
         public virtual ICollection<CrCasAccountContractTaxOwed> CrCasAccountContractTaxOweds { get; set; }

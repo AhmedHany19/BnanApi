@@ -1,12 +1,218 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\WilzY\\BnanApi\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\services\\email\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\services\\email\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\services\\email\\imailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\services\\email\\imailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\dtos\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\dtos\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\questionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\dtos\\questiondto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\models\\crmassysquestionsanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\models\\crmassysquestionsanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\models\\crmassupcontractoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\models\\crmassupcontractoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\models\\crmasuserinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\models\\crmasuserinformation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 10,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Program.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Program.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Program.cs",
+              "RelativeToolTip": "BnanApi\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:23:09.923Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "EmailDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\EmailDTO.cs",
+              "RelativeDocumentMoniker": "BnanApi\\DTOS\\EmailDTO.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\EmailDTO.cs",
+              "RelativeToolTip": "BnanApi\\DTOS\\EmailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:22:06.93Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailController.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\EmailController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\EmailController.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\EmailController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\EmailController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAABIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T14:22:02.019Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CrMasSysQuestionsAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasSysQuestionsAnswer.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Models\\CrMasSysQuestionsAnswer.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasSysQuestionsAnswer.cs",
+              "RelativeToolTip": "BnanApi\\Models\\CrMasSysQuestionsAnswer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:59:22.154Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "QuestionDTO.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\QuestionDTO.cs",
+              "RelativeDocumentMoniker": "BnanApi\\DTOS\\QuestionDTO.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\QuestionDTO.cs",
+              "RelativeToolTip": "BnanApi\\DTOS\\QuestionDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:59:08.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "QuestionsController.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\QuestionsController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\QuestionsController.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\QuestionsController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\QuestionsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:38:49.914Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "CrMasSupContractOption.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasSupContractOption.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Models\\CrMasSupContractOption.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasSupContractOption.cs",
+              "RelativeToolTip": "BnanApi\\Models\\CrMasSupContractOption.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:37:19.514Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CrMasUserInformation.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasUserInformation.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Models\\CrMasUserInformation.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Models\\CrMasUserInformation.cs",
+              "RelativeToolTip": "BnanApi\\Models\\CrMasUserInformation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:36:32.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CarsController.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\CarsController.cs",
+              "ViewState": "AQIAACEAAAAAAAAAAAAowCAAAABcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:34:49.265Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IMailingService.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Services\\Email\\IMailingService.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Services\\Email\\IMailingService.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Services\\Email\\IMailingService.cs",
+              "RelativeToolTip": "BnanApi\\Services\\Email\\IMailingService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T13:29:27.948Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MailingService.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Services\\Email\\MailingService.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Services\\Email\\MailingService.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Services\\Email\\MailingService.cs",
+              "RelativeToolTip": "BnanApi\\Services\\Email\\MailingService.cs",
+              "ViewState": "AQIAAEUAAAAAAAAAAAAawGIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-29T06:34:47.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "RelativeDocumentMoniker": "BnanApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "RelativeToolTip": "BnanApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-29T06:24:34.466Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

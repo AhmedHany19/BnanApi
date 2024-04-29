@@ -8,27 +8,39 @@ namespace BnanApi.Controllers
     [Route("api/[controller]")]
     public class EmailController : Controller
     {
-        private readonly IEmailService _emailService;
         private readonly IMailingService _mailingService;
 
-        public EmailController(IEmailService emailService, IMailingService mailingService)
+        public EmailController(IMailingService mailingService)
         {
-            _emailService = emailService;
             _mailingService = mailingService;
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> SendEmail(EmailDTO request)
-        //{
-        //    await _emailService.SendEmail(request);
-        //    return Ok();
-        //}
 
         [HttpPost]
         public async Task<IActionResult> SendEmail([FromForm] EmailDTO request)
         {
-            await _mailingService.SendEmailAsync(request);
-            return Ok();
+            if (!ModelState.IsValid)
+            {
+                // If validation fails, return 400 Bad Request along with validation errors
+                return BadRequest(ModelState);
+            }
+            if (!_mailingService.IsValidEmail(request.Email))
+            {
+                return BadRequest("Invalid email address.");
+            }
+            bool emailToBnanSent = await _mailingService.SendEmailToBnan(request);
+            bool emailForCustomerSent = await _mailingService.SendEmailForCustomer(request.Email, request.Name);
+            if (emailToBnanSent && emailForCustomerSent)
+            {
+                return Ok("Sent Successfully.");
+            }
+            else
+            {
+                return StatusCode(500, "Failed to send one or more emails.");
+            }
+
+
+
         }
     }
 }

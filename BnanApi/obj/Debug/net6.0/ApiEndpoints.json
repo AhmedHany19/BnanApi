@@ -69,11 +69,6 @@
         "IsRequired": false
       },
       {
-        "Name": "To",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "Subject",
         "Type": "System.String",
         "IsRequired": false
@@ -87,23 +82,13 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "BnanApi.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "BnanApi.Controllers.QuestionsController",
+    "Method": "Questions",
+    "RelativePath": "api/Questions",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BnanApi.WeatherForecast, BnanApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]

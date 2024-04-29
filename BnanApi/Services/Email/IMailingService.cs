@@ -4,6 +4,9 @@ namespace BnanApi.Services.Email
 {
     public interface IMailingService
     {
-        Task SendEmailAsync(EmailDTO request);
+        Task<bool> SendEmailToBnan(EmailDTO request);
+        Task<bool> SendEmailForCustomer(string EmailCustomer, string userName);
+        bool IsValidEmail(string email);
+
     }
 }

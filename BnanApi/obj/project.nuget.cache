@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OgM6wgH6/s1CuWYe9pOkA/6Z+dB6XONYP6qtsXi0KWE3+dMzfOJwGMaQgbocwUFYPqoyACR5Xw/LqUMHZlWHYg==",
+  "dgSpecHash": "3YM2EoUWWTp6UmfyKG9fZ0Fp8nRAjFo5T+sS8huEc6e5kunfiUJGCKYLKlN71MKIJd8TvKjyaICcwJo1z1TyWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\WilzY\\BnanApi\\BnanApi\\BnanApi.csproj",
+  "projectFilePath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\BnanApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\WilzY\\.nuget\\packages\\bouncycastle.cryptography\\2.3.0\\bouncycastle.cryptography.2.3.0.nupkg.sha512",
     "C:\\Users\\WilzY\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",

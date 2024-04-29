@@ -7,6 +7,7 @@ namespace BnanApi.Models
     {
         public CrCasBranchInformation()
         {
+            CrCasAccountInvoices = new HashSet<CrCasAccountInvoice>();
             CrCasAccountReceipts = new HashSet<CrCasAccountReceipt>();
             CrCasAccountSalesPoints = new HashSet<CrCasAccountSalesPoint>();
             CrCasBranchDocuments = new HashSet<CrCasBranchDocument>();
@@ -43,7 +44,8 @@ namespace BnanApi.Models
         public string? CrCasBranchInformationReasons { get; set; }
 
         public virtual CrMasLessorInformation CrCasBranchInformationLessorNavigation { get; set; } = null!;
-        public virtual CrCasBranchPost? CrCasBranchPost { get; set; }
+        public virtual CrCasBranchPost CrCasBranchPost { get; set; } = null!;
+        public virtual ICollection<CrCasAccountInvoice> CrCasAccountInvoices { get; set; }
         public virtual ICollection<CrCasAccountReceipt> CrCasAccountReceipts { get; set; }
         public virtual ICollection<CrCasAccountSalesPoint> CrCasAccountSalesPoints { get; set; }
         public virtual ICollection<CrCasBranchDocument> CrCasBranchDocuments { get; set; }

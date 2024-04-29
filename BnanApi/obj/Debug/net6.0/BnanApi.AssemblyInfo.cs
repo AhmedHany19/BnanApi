@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BnanApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fd97dff012c5f3c7fda5c5c506fd22ccac1eee9f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a8edbd1b58142aa3ce6dd9896205b386daae0adf")]
 [assembly: System.Reflection.AssemblyProductAttribute("BnanApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BnanApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
