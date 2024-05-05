@@ -18,32 +18,6 @@ namespace BnanApi.Controllers
         }
 
 
-
-        //[HttpGet]
-        //public async Task<IActionResult> Questions()
-        //{
-        //    List<QuestionDTO> questionsDTO = new List<QuestionDTO>();
-        //    var Questions = await _context.CrMasSysQuestionsAnswers.Where(x => x.CrMasSysQuestionsAnswerStatus == "A").ToListAsync();
-        //    foreach (var question in Questions)
-        //    {
-        //        var MainTask = _context.CrMasSysMainTasks.FirstOrDefault(x => x.CrMasSysMainTasksCode == question.CrMasSysQuestionsAnswerMainTask && x.CrMasSysMainTasksSystem == question.CrMasSysQuestionsAnswerSystem && x.CrMasSysMainTasksStatus == "A");
-        //        QuestionDTO questionDTO = new QuestionDTO();
-        //        questionDTO.No = question.CrMasSysQuestionsAnswerNo;
-        //        questionDTO.MainTaskCode = question.CrMasSysQuestionsAnswerMainTask;
-        //        questionDTO.System = question.CrMasSysQuestionsAnswerSystem;
-        //        questionDTO.ArMainTask = MainTask.CrMasSysMainTasksArName;
-        //        questionDTO.EnMainTask = MainTask.CrMasSysMainTasksEnName;
-        //        questionDTO.ArFullMainTask = MainTask.CrMasSysMainTasksConcatenateArName;
-        //        questionDTO.EnFullMainTask = MainTask.CrMasSysMainTasksConcatenateEnName;
-        //        questionDTO.ArQuestions = question.CrMasSysQuestionsAnswerArQuestions;
-        //        questionDTO.ArAnswer = question.CrMasSysQuestionsAnswerArAnswer;
-        //        questionDTO.EnQuestions = question.CrMasSysQuestionsAnswerEnQuestions;
-        //        questionDTO.ArQuestions = question.CrMasSysQuestionsAnswerEnAnswer;
-        //        questionsDTO.Add(questionDTO);
-        //    }
-        //    var groupBy = questionsDTO.GroupBy(x => x.MainTaskCode).ToList();
-        //    return Ok(groupBy);
-        //}
         [HttpGet]
         public async Task<IActionResult> Questions()
         {

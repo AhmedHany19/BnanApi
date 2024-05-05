@@ -36,6 +36,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "BnanApi.Controllers.CheckReceipt",
+    "Method": "GetReceipt",
+    "RelativePath": "api/CheckReceipt",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Code",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "BnanApi.Controllers.EmailController",
     "Method": "SendEmail",
     "RelativePath": "api/Email",
