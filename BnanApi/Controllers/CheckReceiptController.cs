@@ -1,33 +1,35 @@
 ﻿using BnanApi.DTOS;
 using BnanApi.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace BnanApi.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class CheckReceipt : Controller
+    public class CheckReceiptController : Controller
     {
         private readonly BnanKSAContext _context;
 
-        public CheckReceipt(BnanKSAContext context)
+        public CheckReceiptController(BnanKSAContext context)
         {
             _context = context;
         }
         [HttpGet]
-        public IActionResult GetReceipt(string Code)
+        public async Task<IActionResult> GetReceipt(string Code)
         {
             var pdfModel = new ReceiptsVM();
             if (Code.Contains("-1401-"))
             {
                 // Contract
-                var contract = _context.CrCasRenterContractBasics
+                var contract =await _context.CrCasRenterContractBasics
                     .Where(x => x.CrCasRenterContractBasicNo == Code)
                     .OrderByDescending(x => x.CrCasRenterContractBasicCopy)
-                    .FirstOrDefault();
+                    .FirstOrDefaultAsync();
 
                 if (contract != null)
                 {
+                    pdfModel.Type = "Contract";
                     pdfModel.ArPdf = contract.CrCasRenterContractBasicArPdfFile?.Replace("~", "");
                     pdfModel.EnPdf = contract.CrCasRenterContractBasicEnPdfFile?.Replace("~", "");
                     return Ok(pdfModel);
@@ -40,9 +42,10 @@ namespace BnanApi.Controllers
             else if (Code.Contains("-1301-"))
             {
                 // Receipt
-                var receipt = _context.CrCasAccountReceipts.FirstOrDefault(x => x.CrCasAccountReceiptNo == Code);
+                var receipt =await _context.CrCasAccountReceipts.FirstOrDefaultAsync(x => x.CrCasAccountReceiptNo == Code);
                 if (receipt != null)
                 {
+                    pdfModel.Type = "Receipt";
                     pdfModel.ArPdf = receipt.CrCasAccountReceiptArPdfFile?.Replace("~", "");
                     pdfModel.EnPdf = receipt.CrCasAccountReceiptEnPdfFile?.Replace("~", "");
                     return Ok(pdfModel);
@@ -55,9 +58,10 @@ namespace BnanApi.Controllers
             else if (Code.Contains("-1308-"))
             {
                 // Invoice
-                var invoice = _context.CrCasAccountInvoices.FirstOrDefault(x => x.CrCasAccountInvoiceNo == Code);
+                var invoice =await _context.CrCasAccountInvoices.FirstOrDefaultAsync(x => x.CrCasAccountInvoiceNo == Code);
                 if (invoice != null)
                 {
+                    pdfModel.Type = "Invoice";
                     pdfModel.ArPdf = invoice.CrCasAccountInvoiceArPdfFile?.Replace("~", "");
                     pdfModel.EnPdf = invoice.CrCasAccountInvoiceEnPdfFile?.Replace("~", "");
                     return Ok(pdfModel);

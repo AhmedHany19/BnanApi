@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\checkreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\checkreceipt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\dtos\\receiptsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\dtos\\receiptsvm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\checkreceiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\checkreceiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -22,19 +22,19 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ReceiptsVM.cs",
-              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\ReceiptsVM.cs",
-              "RelativeDocumentMoniker": "BnanApi\\DTOS\\ReceiptsVM.cs",
-              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\DTOS\\ReceiptsVM.cs",
-              "RelativeToolTip": "BnanApi\\DTOS\\ReceiptsVM.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:43:20.797Z",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "RelativeDocumentMoniker": "BnanApi\\appsettings.json",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "RelativeToolTip": "BnanApi\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-05T10:38:33.049Z",
               "EditorCaption": ""
             },
             {
@@ -52,13 +52,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "CheckReceipt.cs",
-              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceipt.cs",
-              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CheckReceipt.cs",
-              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceipt.cs",
-              "RelativeToolTip": "BnanApi\\Controllers\\CheckReceipt.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAABIAAAAJAAAA",
+              "DocumentIndex": 1,
+              "Title": "CheckReceiptController.cs",
+              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceiptController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CheckReceiptController.cs",
+              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceiptController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\CheckReceiptController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAD8AAAAdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-05-05T09:29:17.375Z",
               "EditorCaption": ""
