@@ -1,18 +1,10 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\",
+  "WorkspaceRootPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\checkreceiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\checkreceiptcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|c:\\users\\wilzy\\desktop\\bnanapi\\bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -28,39 +20,13 @@
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\appsettings.json",
               "RelativeDocumentMoniker": "BnanApi\\appsettings.json",
-              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\appsettings.json",
+              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\appsettings.json",
               "RelativeToolTip": "BnanApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAeAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-05T10:38:33.049Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CarsController.cs",
-              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
-              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CarsController.cs",
-              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
-              "RelativeToolTip": "BnanApi\\Controllers\\CarsController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACQAAACJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:29:40.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CheckReceiptController.cs",
-              "DocumentMoniker": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceiptController.cs",
-              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CheckReceiptController.cs",
-              "ToolTip": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\Controllers\\CheckReceiptController.cs",
-              "RelativeToolTip": "BnanApi\\Controllers\\CheckReceiptController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAD8AAAAdAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-05T09:29:17.375Z",
+              "WhenOpened": "2024-05-29T11:14:52.742Z",
               "EditorCaption": ""
             }
           ]

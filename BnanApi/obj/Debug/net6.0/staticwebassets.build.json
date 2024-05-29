@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "gJZYHjW6FhtPPnVADebXi4Cjd0VMkYAFygRkcJaKbF4=",
+  "Hash": "vgIYlQx8M5bzERz5whCa/t0l2unZ6m/WbQhdXUlYAA0=",
   "Source": "BnanApi",
   "BasePath": "_content/BnanApi",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "BnanApi\\wwwroot",
       "Source": "BnanApi",
-      "ContentRoot": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\wwwroot\\",
+      "ContentRoot": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\wwwroot\\",
       "BasePath": "_content/BnanApi",
       "Pattern": "**"
     }

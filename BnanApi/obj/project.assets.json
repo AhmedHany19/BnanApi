@@ -2880,11 +2880,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\BnanApi.csproj",
+      "projectUniqueName": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj",
       "projectName": "BnanApi",
-      "projectPath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\BnanApi.csproj",
+      "projectPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\BnanApi.csproj",
       "packagesPath": "C:\\Users\\WilzY\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\WilzY\\Desktop\\BnanApi\\BnanApi\\obj\\",
+      "outputPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\WilzY\\AppData\\Roaming\\NuGet\\NuGet.Config",
