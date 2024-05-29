@@ -53,11 +53,12 @@ namespace BnanApi.Services.Email
 
         public async Task<bool> SendEmailToBnan(EmailDTO request)
         {
+            string SubjectAr = "طلب النسخة التجريبية لنظام بنان";
             // Email sending logic here
             var email = new MimeMessage
             {
                 Sender = MailboxAddress.Parse(_mailSettings.Email),
-                Subject = request.Subject
+                Subject = SubjectAr
             };
 
             email.To.Add(MailboxAddress.Parse(_mailSettings.Email));

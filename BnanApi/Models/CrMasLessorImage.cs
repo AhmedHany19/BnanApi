@@ -40,6 +40,12 @@ namespace BnanApi.Models
         public string? CrMasLessorImageArContractPage7 { get; set; }
         public string? CrMasLessorImageArContractPage8 { get; set; }
         public string? CrMasLessorImageArContractPage9 { get; set; }
+        public string? CrMasLessorImageArContractTerms1 { get; set; }
+        public string? CrMasLessorImageArContractTerms2 { get; set; }
+        public string? CrMasLessorImageArContractTerms3 { get; set; }
+        public string? CrMasLessorImageArSettlementContractPage { get; set; }
+        public string? CrMasLessorImageArSettlementContractExpenses { get; set; }
+        public string? CrMasLessorImageArSettlementContractCompensation { get; set; }
         public string? CrMasLessorImageEnContractPage1 { get; set; }
         public string? CrMasLessorImageEnContractPage2 { get; set; }
         public string? CrMasLessorImageEnContractPage3 { get; set; }
@@ -49,6 +55,12 @@ namespace BnanApi.Models
         public string? CrMasLessorImageEnContractPage7 { get; set; }
         public string? CrMasLessorImageEnContractPage8 { get; set; }
         public string? CrMasLessorImageEnContractPage9 { get; set; }
+        public string? CrMasLessorImageEnContractTerms1 { get; set; }
+        public string? CrMasLessorImageEnContractTerms2 { get; set; }
+        public string? CrMasLessorImageEnContractTerms3 { get; set; }
+        public string? CrMasLessorImageEnSettlementContractPage { get; set; }
+        public string? CrMasLessorImageEnSettlementContractExpenses { get; set; }
+        public string? CrMasLessorImageEnSettlementContractCompensation { get; set; }
 
         public virtual CrMasLessorInformation CrMasLessorImageCodeNavigation { get; set; } = null!;
     }

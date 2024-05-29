@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "E:\\Work\\8-3-2024\\Work\\BnanApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\emailcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\dtos\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\dtos\\emaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|e:\\work\\8-3-2024\\work\\bnanapi\\bnanapi\\services\\email\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{87A74831-90DB-4320-A827-755FFFD4BDCF}|BnanApi\\BnanApi.csproj|solutionrelative:bnanapi\\services\\email\\mailingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CarsController.cs",
+              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\CarsController.cs",
+              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\CarsController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\CarsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:54:10.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailDTO.cs",
+              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\DTOS\\EmailDTO.cs",
+              "RelativeDocumentMoniker": "BnanApi\\DTOS\\EmailDTO.cs",
+              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\DTOS\\EmailDTO.cs",
+              "RelativeToolTip": "BnanApi\\DTOS\\EmailDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAQAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:53:27.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MailingService.cs",
+              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Services\\Email\\MailingService.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Services\\Email\\MailingService.cs",
+              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Services\\Email\\MailingService.cs",
+              "RelativeToolTip": "BnanApi\\Services\\Email\\MailingService.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAawDUAAAA4AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:50:20.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\appsettings.json",
-              "RelativeDocumentMoniker": "BnanApi\\appsettings.json",
-              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\appsettings.json",
-              "RelativeToolTip": "BnanApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-05-29T11:14:52.742Z",
+              "Title": "EmailController.cs",
+              "DocumentMoniker": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\EmailController.cs",
+              "RelativeDocumentMoniker": "BnanApi\\Controllers\\EmailController.cs",
+              "ToolTip": "E:\\Work\\8-3-2024\\Work\\BnanApi\\BnanApi\\Controllers\\EmailController.cs",
+              "RelativeToolTip": "BnanApi\\Controllers\\EmailController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-29T11:50:05.208Z",
               "EditorCaption": ""
             }
           ]

@@ -12,6 +12,8 @@ namespace BnanApi.Models
         public string? CrMasSysQuestionsAnswerArAnswer { get; set; }
         public string? CrMasSysQuestionsAnswerEnQuestions { get; set; }
         public string? CrMasSysQuestionsAnswerEnAnswer { get; set; }
+        public string? CrMasSysQuestionsAnswerArVideo { get; set; }
+        public string? CrMasSysQuestionsAnswerEnVideo { get; set; }
         public string? CrMasSysQuestionsAnswerStatus { get; set; }
         public string? CrMasSysQuestionsAnswerReasons { get; set; }
     }

@@ -27,6 +27,7 @@ namespace BnanApi.Models
         public string? CrMasUserInformationPassWord { get; set; }
         public string? CrMasUserInformationRemindMe { get; set; }
         public string? CrMasUserInformationLessor { get; set; }
+        public string? CrMasUserInformationId { get; set; }
         public string? CrMasUserInformationDefaultBranch { get; set; }
         public string? CrMasUserInformationDefaultLanguage { get; set; }
         public bool? CrMasUserInformationAuthorizationBnan { get; set; }
@@ -60,7 +61,6 @@ namespace BnanApi.Models
         public bool? CrMasUserInformationOperationStatus { get; set; }
         public string? CrMasUserInformationStatus { get; set; }
         public string? CrMasUserInformationReasons { get; set; }
-       
         public virtual CrMasLessorInformation? CrMasUserInformationLessorNavigation { get; set; }
         public virtual CrMasUserContractValidity CrMasUserContractValidity { get; set; } = null!;
         public virtual ICollection<CrCasAccountContractTaxOwed> CrCasAccountContractTaxOweds { get; set; }

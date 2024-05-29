@@ -85,11 +85,6 @@
         "IsRequired": false
       },
       {
-        "Name": "Subject",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
         "Name": "Body",
         "Type": "System.String",
         "IsRequired": false

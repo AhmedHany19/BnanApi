@@ -22,6 +22,8 @@ namespace BnanApi.Models
 
         public string CrCasBranchInformationLessor { get; set; } = null!;
         public string CrCasBranchInformationCode { get; set; } = null!;
+        public string? CrCasBranchInformationShomoosBranchAr { get; set; }
+        public string? CrCasBranchInformationShomoosBranchEn { get; set; }
         public string? CrCasBranchInformationArTga { get; set; }
         public string? CrCasBranchInformationEnTga { get; set; }
         public string? CrCasBranchInformationArName { get; set; }

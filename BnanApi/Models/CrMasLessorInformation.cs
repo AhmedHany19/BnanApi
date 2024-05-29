@@ -19,6 +19,7 @@ namespace BnanApi.Models
             CrCasOwners = new HashSet<CrCasOwner>();
             CrCasPriceCarBasics = new HashSet<CrCasPriceCarBasic>();
             CrCasRenterContractAuthorizations = new HashSet<CrCasRenterContractAuthorization>();
+            CrCasRenterContractShomoos = new HashSet<CrCasRenterContractShomoo>();
             CrCasRenterLessors = new HashSet<CrCasRenterLessor>();
             CrCasRenterPrivateDriverInformations = new HashSet<CrCasRenterPrivateDriverInformation>();
             CrMasContractCompanies = new HashSet<CrMasContractCompany>();
@@ -31,6 +32,7 @@ namespace BnanApi.Models
         public string? CrMasLessorInformationArShortName { get; set; }
         public string? CrMasLessorInformationEnLongName { get; set; }
         public string? CrMasLessorInformationEnShortName { get; set; }
+        public string? CrMasLessorInformationOwnerId { get; set; }
         public string? CrMasLessorInformationClassification { get; set; }
         public string? CrMasLessorInformationLocation { get; set; }
         public string? CrMasLessorInformationGovernmentNo { get; set; }
@@ -66,6 +68,7 @@ namespace BnanApi.Models
         public virtual ICollection<CrCasOwner> CrCasOwners { get; set; }
         public virtual ICollection<CrCasPriceCarBasic> CrCasPriceCarBasics { get; set; }
         public virtual ICollection<CrCasRenterContractAuthorization> CrCasRenterContractAuthorizations { get; set; }
+        public virtual ICollection<CrCasRenterContractShomoo> CrCasRenterContractShomoos { get; set; }
         public virtual ICollection<CrCasRenterLessor> CrCasRenterLessors { get; set; }
         public virtual ICollection<CrCasRenterPrivateDriverInformation> CrCasRenterPrivateDriverInformations { get; set; }
         public virtual ICollection<CrMasContractCompany> CrMasContractCompanies { get; set; }
